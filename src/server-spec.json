@@ -1,0 +1,50 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Express Typescript and Swagger",
+    "description": "Test Server",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:7000",
+      "description": "Development server"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "GeneralError": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Multimedia": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "lastModified": {
+            "type": "string"
+          },
+          "etag": {
+            "type": "string"
+          },
+          "size": {
+            "type": "number"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
